@@ -48,7 +48,7 @@ function App() {
     <Textos texto={
       <div>
         <p>Vamos analisar agora o trecho de uma animação chamada a voz do silêncio:</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Hmrfas01C_sa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Hmrfas01C_s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     }/>
     <Perguntas pergunta={
@@ -75,7 +75,7 @@ function App() {
     <Textos texto={
       <div>
         <p>assista a cena do filme sound of metal e responda em seguida:</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Hm00Mk5dE3Ee" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Hm00Mk5dE3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>}/>
     <Perguntas pergunta={
       <div>
@@ -89,7 +89,41 @@ function App() {
         <p> 02 - Não. Os efeitos sonoros são essenciais para que seja passada a sensação de estar no corpo do personagem e ouvir o mundo do mesmo modo que ele. Sem os efeitos sonoros tudo isso é perdido, juntamente com o impacto da cena.</p>
       </div>
     }/>
-    <Textos texto={"Em mídias estáticas como em quadrinhos e mangás temos "}/>
+    <Textos texto={
+    <div>
+      <p>Não apenas a música e angulação nos diz sobre o filme, como também o filtro, ou coloração presente nas cenas. Observe os trechos a seguir:</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Hm00Mk5dE3Ee" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>}/>
+
+    <Perguntas pergunta={<p>Agora reflita como a coloração da cena interfere no que sentimos sobre ela, e as sensações que cada cena transmite com isso.</p>}/>
+    
+    <Textos texto={
+      <div>
+        <p>Podemos ver características filmográficas não apenas em filmes, mas também em clipes de música, que muitas vezes transmitem uma ideia de história. Observe o clipe a seguir.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cMFHUTJ13Yse" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>}/>
+    <Perguntas pergunta={<p>Ainda pensando na questão anterior, responda: o que a mudança na cor do clipe pode nos dizer acerca do que eles querem passar com a “história” do clipe?</p>}/>
+  
+    <Textos texto={
+      <div>
+        <p>Os clipes a seguir trazem consigo algumas ideias semelhantes em sua filmografia, assista a ambos e nos diga o que você consegue absorver da “história”.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cMFHUTJ13Yse" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cMFHUTJ13Yse" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    }/>
+    <Perguntas pergunta={
+      <div>
+        <p>Sobre os três clipes musicais, analise novamente e reflita sobre como as características trabalhadas e informadas anteriormente estão presentes neles.</p>
+        <input></input>
+        <p>Algumas cenas do cinema se tornam memoráveis e marcantes, observe algumas imagens a seguir e responda:</p>
+        <p>Por qual motivo elas se tornaram tão conhecidas? Crie hipóteses.</p>
+        <input></input>
+        <p>Você já assistiu algum desses filmes? Sabe de onde vem cada uma dessas cenas?</p>
+        <input></input>
+        <p>Reflita sobre elas: o que podemos notar em cada uma seguindo o que já estudamos? O que as torna diferentes entre si (sensações, cores, etc.)?</p>
+      </div>
+    }/>
+    
   </div>
   );                                                                    
 }

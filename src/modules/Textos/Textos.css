@@ -2,8 +2,14 @@
 .divTextos{
     display:flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     margin: 15px;
     
+}
+
+.divTextos iframe{
+    margin:6px;
 }
 
 .divTextos p{
