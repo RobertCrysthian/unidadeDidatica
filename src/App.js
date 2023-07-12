@@ -6,6 +6,10 @@ import img from "./assets/img1.png"
 import img2 from "./assets/img2.png"
 import img3 from "./assets/img3.png"
 import img4 from "./assets/img4.png"
+import img5 from "./assets/img5.png"
+import img6 from "./assets/img6.png"
+import img7 from "./assets/img7.png"
+import img8 from "./assets/img8.png"
 import hq1 from "./assets/hq1.png"
 import hq2 from "./assets/hq2.png"
 import hq3 from "./assets/hq3.png"
@@ -197,8 +201,29 @@ function App() {
         <p> 16 - Você já assistiu algum desses filmes? Sabe de onde vem cada uma dessas cenas?</p>
         <input></input>
         <p> 17 - Reflita sobre elas: o que podemos notar em cada uma seguindo o que já estudamos? O que as torna diferentes entre si (sensações, cores, etc.)?</p>
-      </div>
-    }/>
+      </div>}/>
+
+      <Textos texto={
+        <div>
+          <p>Algumas cenas do cinema se tornam memoráveis e marcantes, observe algumas imagens a seguir e responda:</p>
+          <img src={img5} width={400} height={300}/>
+          <img src={img6} width={400} height={300}/>
+          <img src={img7} width={400} height={300}/>
+          <img src={img8} width={400} height={300}/>
+        </div>
+      }
+      />
+
+      <Perguntas pergunta={
+        <div>
+          <p>Por qual motivo elas se tornaram tão conhecidas? Crie hipóteses.</p>
+          <input></input>
+          <p>Você já assistiu algum desses filmes? Sabe de onde vem cada uma dessas cenas?</p>
+          <input></input>
+          <p>Reflita sobre elas: o que podemos notar em cada uma seguindo o que já estudamos? O que as torna diferentes entre si (sensações, cores, etc.)?
+</p>
+        </div>
+      }/>
     
   </div>
   );                                                                    
