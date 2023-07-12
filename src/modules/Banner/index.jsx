@@ -7,7 +7,7 @@ export default function Banner(){
             <h1>Alfabetização midiática e informacional: Módulo 4 - LINGUAGENS
             NAS MÍDIAS E NA INFORMAÇÃO
             </h1>
-            <p>Alunos: Robert Crysthian, Ariane Valões e Kathelen Clausen <BsFillArrowDownCircleFill/> <BsFillArrowUpCircleFill/></p>
+            <p>Alunos: Robert Crysthian, Ariane Valões e Kathelen Clausen</p>
         </div>
     )
 }
