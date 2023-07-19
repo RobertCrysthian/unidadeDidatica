@@ -24,6 +24,8 @@ import hq11 from "./assets/hq11.png"
 import hq12 from "./assets/hq12.png"
 import hq13 from "./assets/hq13.png"
 import Textos from './modules/Textos';
+import ex1 from "./assets/ex1.png"
+import ex2 from "./assets/ex2.png"
 
 
 
@@ -149,7 +151,9 @@ function App() {
 
   <Perguntas pergunta={
     <div>
-      <p> 09 -De que outro modo podemos interpretar o demônio que fica dentro de Ava?</p>
+      <img src={ex1}width={400} height={300} />
+      <img src={ex2} width={300} height={300}/>
+      <p> 09 -Observe as cores presentes no design das personagens. Com o pouco que você sabe da obra, consegue notar se há alguma relação entre suas personalidades, poderes com as cores que as compõem?</p>
       <input></input>
       <p> 10 - Recursos técnicos são aplicados em pinturas e desenhos para que o observador foque em um determinado elemento destacado por contraste. De que modo isso é aplicado nesses quadros acima? </p>
       <input></input>
@@ -158,7 +162,7 @@ function App() {
   }
     resposta={
       <div>
-        <p> 09 - A ideia de ter um "demônio" dentro de si pode ser interpretado como sentimentos ou acontecimentos que nos fazem agir de modo agressivo, cruel ou até mesmo nos fazem se sentir mal.</p>
+        <p> 09 - Sim. Ava tem poderes relacionados com fogo e um temperamento agressivo devido ao demônio que vive em seu corpo, por conta disso trabalha com tons quentes como o vermelho e laranja, que normalmente remetem ao fogo e a fúria. Já a segunda personagem tem poderes relacionados a natureza e uma paleta que representa muito bem esses elementos (azul remetendo a água, verde às folhas e marrom podendo ser o tronco das árvores ou a terra).</p>
         <p> 10 - Através do contraste entre as cores da personagem (puxadas para o vermelho) e as cores do fundo (puxadas para o azul). Em um ambiente todo azul a personagem acaba se destacando.</p>
         <p> 11 - Ambos o texto e as imagens são extremamente importantes para que a mensagem seja passada de forma eficiente na hq. Elas estão intimamente ligadas e separá-las fará com que seja perdido o sentido original da autora.</p>
       </div>
