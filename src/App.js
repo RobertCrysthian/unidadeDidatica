@@ -26,6 +26,7 @@ import hq13 from "./assets/hq13.png"
 import Textos from './modules/Textos';
 import ex1 from "./assets/ex1.png"
 import ex2 from "./assets/ex2.png"
+import MultiplaEscolha from './modules/QuestaoMultiplaEscolha';
 
 
 
@@ -34,36 +35,41 @@ function App() {
   return (
   <div className="App">
     <Banner/>
+    
     <Textos texto={<p>____Visamos com este trabalho criar uma unidade pedagógica que consiga instigar seus usuários a refletirem e conhecerem diversos elementos presente nas mídias que geram significados. Dentre esses elementos destacamos a presença dos códigos técnicos e simbólicos. Onde o primeiro está relacionado aos artifícios técnicos que geram significados(como ângulos de câmera e a música de um filme), e o segundo relacionado aos símbolos presentes nas mídias ( a presença de uma cor ou um gesto para representar algo, por exemplo).</p>}/>
+    
     <Textos texto={
-    <div>
-        <p>Você já parou para pensar em como os filmes trabalham com diversos recursos responsáveis por nos fazer reagir de uma determinada maneira? Por exemplo, um filme de terror vai gradativamente aumentando a música para gerar uma sensação de desconforto e insegurança, Ou um filme de drama pode deixar a câmera próxima do personagem para enfatizar sua dor.</p>
-        <p>É importante saber que as mídias não se comunicam apenas através da linguagem verbal, diversos elementos não verbais também são responsáveis por gerar significados. Alguns desses elementos são: sons, gestos, signos, recursos  técnicos, figurino, estilização, etc.</p>
-        <p>Dentro desta unidade você vai conhecer um pouco mais sobre esses recursos e vai aplicar seus conhecimentos com vários  exercícios.
-        </p>
-    </div>
-  }/>
+      <div>
+          <p>Você já parou para pensar em como os filmes trabalham com diversos recursos responsáveis por nos fazer reagir de uma determinada maneira? Por exemplo, um filme de terror vai gradativamente aumentando a música para gerar uma sensação de desconforto e insegurança, Ou um filme de drama pode deixar a câmera próxima do personagem para enfatizar sua dor.</p>
+          <p>É importante saber que as mídias não se comunicam apenas através da linguagem verbal, diversos elementos não verbais também são responsáveis por gerar significados. Alguns desses elementos são: sons, gestos, signos, recursos  técnicos, figurino, estilização, etc.</p>
+          <p>Dentro desta unidade você vai conhecer um pouco mais sobre esses recursos e vai aplicar seus conhecimentos com vários  exercícios.
+          </p>
+      </div>}
+    />
+
     <Textos texto={<p>Para começar analise as imagens abaixo: </p>}/>
     <Textos texto={
-    <div>
-        <div>
-          A)<img src={img} width={360} height={200}/>
-          B)<img src={img2} width={360} height={200}/>
-        </div>
-        <div>
-          C)<img src={img3} width={360} height={200}/>
-          D)<img src={img4} width={360} height={200}/>
-        </div>
-    </div>
+      <div>
+          <div>
+            A)<img src={img} width={360} height={200}/>
+            B)<img src={img2} width={360} height={200}/>
+          </div>
+          <div>
+            C)<img src={img3} width={360} height={200}/>
+            D)<img src={img4} width={360} height={200}/>
+          </div>
+      </div>
     }/>
+
     <Perguntas pergunta={
-    <div>
-      <p>Essas imagens foram retiradas de filmes que possuem gêneros diversificados.</p>
-      <p> 01 - Tente identificar a qual gênero cada um deles pertence somente observando seus elementos visuais. Em seguida, converse com seus amigos e veja se chegam na mesma conclusão.</p>
-    </div>
+      <div>
+        <p>Essas imagens foram retiradas de filmes que possuem gêneros diversificados.</p>
+        <p> 01 - Tente identificar a qual gênero cada um deles pertence somente observando seus elementos visuais. Em seguida, converse com seus amigos e veja se chegam na mesma conclusão.</p>
+      </div>
     }
     resposta={"A)Fantasia, B)Terror, C)Drama, D)Ficção Científica. Observem como a ambientação, as expressões dos personanagens, seus trajes e outros elementos acabam caracterizando tanto um filme que é capaz de descobrirmos seu gênero apenas com um frame."} 
   />
+
     <Textos texto={
       <div>
         <p>Koe no katachi é uma animação que conta a história de Shoya Ishida, um estudante que, em sua inocência infantil, acabou fazendo bullying com uma colega surda de sua turma, a Nishimiya. Suas ações eram encorajadas pela turma e foram tão longe que acabaram trazendo diversos problemas para ambos os personagens. Este evento prejudicou tanto Ishida que gerou consequências durante toda sua adolescência, sendo a exclusão social uma delas.</p>
@@ -71,19 +77,19 @@ function App() {
         <iframe width="560" height="315" src="https://www.youtube.com/embed/Hmrfas01C_s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     }/>
+
     <Perguntas pergunta={
       <div>
         <p> 02 - Observando a cena descontextualizadamente, o que você consegue inferir sobre o personagem e a situação ao qual ele se encontra?</p>
-          <input type="text"></input>
+          <input type="text" placeholder="Campo para resposta: "></input>
         <p>Preste bastante atenção no uso da música, dos elementos, enquadramentos,  efeitos sonoros e responda a seguir:</p>
         <p> 03 - No trecho há uma marcação em formato de “x” nos rostos dos personagens de segundo plano, o que você acha que isso pode significar?</p>
-          <input type="text"></input>
+          <input type="text" placeholder="Campo para resposta: "></input>
         <p> 04 - Note que o enquadramento começa com a câmera bem próxima do personagem e posteriormente se afasta, nos mostrando as várias pessoas que estão ao redor dele. Você acha que esse enquadramento enfatiza algo? De que modo ele acaba contribuindo para expressar a situação vivenciada pelo personagem?
         </p>
-          <input></input>
+          <input placeholder="Campo para resposta: "></input>
         <p> 05 - O que essa música causa a você? Através dela, podemos identificar o gênero do filme?</p>
-      </div>
-    }
+      </div>}
       resposta={
         <div>
           <p>02 - Podemos presumir que ele está passando por algum tipo de trauma social, ou algo parecido. A cena tenta nos mostrar através de diversos recursos que ele voltar a perceber as pessoas e coisas ao seu redor é uma grande conquista.</p>
@@ -98,22 +104,24 @@ function App() {
         <p>Sound of Metal é um filme que apresenta um baterista de uma pequena banda que vai perdendo a audição. Inicialmente não aceita sua nova situação, passando por diversos eventos que vão mudar sua vida para sempre.</p>
         <p>Assista a cena do filme e responda em seguida:</p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/Hm00Mk5dE3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>}/>
+      </div>}
+    />
+
     <Perguntas pergunta={
       <div>
         <p> 06 - Nessa cena em questão conseguimos ter uma imersão muito grande com os personagens do filme através de um recurso específico. Que recurso é esse? Como ele contribui para que possamos nos sentir como os personagens?</p>
-        <input></input>
+        <input placeholder="Campo para resposta: "></input>
         <p> 07 - Você acha que esse trecho teria a mesma sensação e sentido se a parte sonora dele fosse diferente? Por quê?</p>
-        <input></input>
+        <input placeholder="Campo para resposta: "></input>
         <p> 08 - O que você sente presenciando essa cena? Acha que ela conseguiu passar as sensações de maneira eficiente?</p>
-      </div>
-    }resposta={
-      <div>
-        <p> 06 - É o recurso sonoro. Através dele o filme busca uma maneira de representar como esses personagens ouvem as coisas, e com isso conseguimos nos conectar profundamente com eles.</p>
-        <p> 07 - Não. Os efeitos sonoros são essenciais para que seja passada a sensação de estar no corpo do personagem e ouvir o mundo do mesmo modo que ele. Sem os efeitos sonoros tudo isso é perdido, juntamente com o impacto da cena.</p>
-        <p> 08 - Resposta Pessoal.</p>
-      </div>
-    }/>
+      </div>}
+        resposta={
+          <div>
+            <p> 06 - É o recurso sonoro. Através dele o filme busca uma maneira de representar como esses personagens ouvem as coisas, e com isso conseguimos nos conectar profundamente com eles.</p>
+            <p> 07 - Não. Os efeitos sonoros são essenciais para que seja passada a sensação de estar no corpo do personagem e ouvir o mundo do mesmo modo que ele. Sem os efeitos sonoros tudo isso é perdido, juntamente com o impacto da cena.</p>
+            <p> 08 - Resposta Pessoal.</p>
+          </div>
+        }/>
 
 <Textos texto={
         <div>
@@ -121,6 +129,7 @@ function App() {
           <p>Esta obra nos apresenta Ava, uma personagem que vive em uma espécie de mundo futurista com um demônio preso em seu corpo. Esta sendo uma rainha que, para evitar morrer em uma derrota iminente de seu rival, tomou uma poção e reencarnou no corpo de nossa protagonista. Este demônio é capaz de controlar periodicamente o corpo de Ava, importunando-a por não aceitar seu pacto.</p>
         </div>
       }/>
+
 <Textos texto={
   <div>
     <img src={hq1} width={400} height={300}/>
@@ -154,9 +163,9 @@ function App() {
       <img src={ex1}width={400} height={300} />
       <img src={ex2} width={300} height={300}/>
       <p> 09 -Observe as cores presentes no design das personagens. Com o pouco que você sabe da obra, consegue notar se há alguma relação entre suas personalidades, poderes com as cores que as compõem?</p>
-      <input></input>
+      <input placeholder="Campo para resposta: "></input>
       <p> 10 - Recursos técnicos são aplicados em pinturas e desenhos para que o observador foque em um determinado elemento destacado por contraste. De que modo isso é aplicado nesses quadros acima? </p>
-      <input></input>
+      <input placeholder="Campo para resposta: "></input>
       <p> 11 - Podemos notar que esse trecho se trata de uma lembrança narrada pelo demônio de Ava. Observe que os quadros acabam destacando diferentes fases da vida de Ava e complementam o texto. Sem as imagens, você conseguiria ter uma noção tão precisa dos eventos? E só com as imagens, ainda seria passada a mesma mensagem?</p>
     </div>
   }
@@ -166,8 +175,17 @@ function App() {
         <p> 10 - Através do contraste entre as cores da personagem (puxadas para o vermelho) e as cores do fundo (puxadas para o azul). Em um ambiente todo azul a personagem acaba se destacando.</p>
         <p> 11 - Ambos o texto e as imagens são extremamente importantes para que a mensagem seja passada de forma eficiente na hq. Elas estão intimamente ligadas e separá-las fará com que seja perdido o sentido original da autora.</p>
       </div>
-      
 }/>
+
+    <MultiplaEscolha 
+      titulo={"Marque a alternativa que estiver incoerente com as imagens acima"}
+      q2={"A artista brinca com tons extremamente escuros no fundo para gerar contraste com as pesonagens"}
+      q1={"Podemos inferir que se trata de uma história cômica e voltada para o público infantil"}
+      q3={"A história trata de temas mais densos e com uma certa dramatização nos eventos."}
+      q4={"O trecho conta com diversos verbos no pretérito, indicando que os eventos se tratam de memórias."}
+      escolhaCerta={"escolhaCerta"}
+    />
+
     <Textos texto={
     <div>
       <p>Não apenas a música e angulação nos diz sobre o filme, como também o filtro, ou coloração presente nas cenas. Observe os trechos a seguir:</p>
@@ -198,12 +216,12 @@ function App() {
     <Perguntas pergunta={
       <div>
         <p> 14 - Sobre os três clipes musicais, analise novamente e reflita sobre como as características trabalhadas e informadas anteriormente estão presentes neles.</p>
-        <input></input>
+        <input placeholder="Campo para resposta: "></input>
         <p>Algumas cenas do cinema se tornam memoráveis e marcantes, observe algumas imagens a seguir e responda:</p>
         <p> 15 - Por qual motivo elas se tornaram tão conhecidas? Crie hipóteses.</p>
-        <input></input>
+        <input placeholder="Campo para resposta: "></input>
         <p> 16 - Você já assistiu algum desses filmes? Sabe de onde vem cada uma dessas cenas?</p>
-        <input></input>
+        <input placeholder="Campo para resposta: "></input>
         <p> 17 - Reflita sobre elas: o que podemos notar em cada uma seguindo o que já estudamos? O que as torna diferentes entre si (sensações, cores, etc.)?</p>
       </div>}/>
 
@@ -221,11 +239,10 @@ function App() {
       <Perguntas pergunta={
         <div>
           <p>Por qual motivo elas se tornaram tão conhecidas? Crie hipóteses.</p>
-          <input></input>
+          <input placeholder="Campo para resposta: "></input>
           <p>Você já assistiu algum desses filmes? Sabe de onde vem cada uma dessas cenas?</p>
-          <input></input>
-          <p>Reflita sobre elas: o que podemos notar em cada uma seguindo o que já estudamos? O que as torna diferentes entre si (sensações, cores, etc.)?
-</p>
+          <input placeholder="Campo para resposta: "></input>
+          <p>Reflita sobre elas: o que podemos notar em cada uma seguindo o que já estudamos? O que as torna diferentes entre si (sensações, cores, etc.)?</p>
         </div>
       }/>
     
