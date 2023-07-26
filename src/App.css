@@ -42,7 +42,9 @@ table {
     border-spacing: 0;
 }
 body{
-    background-color: rgb(24, 24, 24);
+    background-color: #4158D0;
+background-image: linear-gradient(43deg, #1f2a64 0%, #832c7d 46%, #bd8817 100%);
+
 }
 
 .palavraDestaque{
