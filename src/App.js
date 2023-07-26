@@ -218,7 +218,6 @@ function App() {
     <Textos texto={
     <div>
       <p>Não apenas a música e angulação nos diz sobre o filme, como também o filtro, ou coloração presente nas cenas. Observe os trechos a seguir:</p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/V4qwn4aoPU8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/HvWx0flvdxw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/bunz_oFfJ-8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/-zJOKWEauN4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
