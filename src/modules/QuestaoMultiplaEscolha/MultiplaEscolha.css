@@ -1,0 +1,63 @@
+.centralizarQuestoes{
+    display:flex;
+    justify-content: center;
+}
+
+.divMult{
+    width: 69.3%;
+    border-radius: 10px;
+    background-color:rgb(241, 241, 241) ;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.divMult h1{
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 8px;
+}
+
+.p1{
+    display:flex;
+    justify-content: center;
+    width: 120%;
+    
+}
+.questao{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 8px;
+    background-color: rgb(128, 195, 250);
+    width:30%;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.questao:hover{
+    cursor:pointer;
+    background-color: rgb(107, 171, 219); ;
+}
+
+
+
+.escolhaCerta{
+    background-color: rgb(34, 175, 34);
+}
+.escolhaCerta:hover{
+    background-color: rgb(19, 146, 19);
+}
+
+.escolhaErrada{
+    background-color: rgb(206, 73, 73);
+}
+.escolhaErrada:hover{
+    background-color: rgb(189, 56, 56);
+}
+
