@@ -11,7 +11,7 @@ export default function Perguntas(props){
         <div className="principalPerguntas">
         <div className="divPerguntas">
             <h1>{props.pergunta} </h1>
-            <input type="text"></input>
+            <input type="text" placeholder="Campo para resposta: "></input>
             <button onClick={onClick}>Resposta: </button>
             <div className={`menu ${isActive? "active" : "inactive"}`}>
             <p>Possível Resposta: {props.resposta} </p>
