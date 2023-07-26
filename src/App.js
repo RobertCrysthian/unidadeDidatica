@@ -32,9 +32,10 @@ import MultiplaEscolha from './modules/QuestaoMultiplaEscolha';
 
 function App() {
 
+
   return (
   <div className="App">
-    <Banner/>
+    <Banner />
     
     <Textos texto={<p>____Visamos com este trabalho criar uma unidade pedagógica que consiga instigar seus usuários a refletirem e conhecerem diversos elementos presente nas mídias que geram significados. Dentre esses elementos destacamos a presença dos códigos técnicos e simbólicos. Onde o primeiro está relacionado aos artifícios técnicos que geram significados(como ângulos de câmera e a música de um filme), e o segundo relacionado aos símbolos presentes nas mídias ( a presença de uma cor ou um gesto para representar algo, por exemplo).</p>}/>
     
@@ -99,6 +100,18 @@ function App() {
         </div>
       }/>
 
+      <MultiplaEscolha 
+        titulo={"Se baseando nas questões acima, indique a alternativa falsa: "}
+        q1={"Os recursos técnicos são dispostos de modo que consiga impactar o telespectador e fazê-lo sentir empatia pelo personagem."}
+        q2={"As marcações em formato de 'x' não tem um papel importante no impacto dessa cena."}
+        q3={"Podemos presumir que o personagem se sente desconfortável em um ambiente como o visto na cena."}
+        q4={"Podemos ver que ele superou uma barreira muito impactante em sua vida"}
+        escolha1="escolhaErrada"
+        escolha2="escolhaCerta"
+        escolha3="escolhaErrada"
+        escolha4="escolhaErrada"
+      />
+
     <Textos texto={
       <div>
         <p>Sound of Metal é um filme que apresenta um baterista de uma pequena banda que vai perdendo a audição. Inicialmente não aceita sua nova situação, passando por diversos eventos que vão mudar sua vida para sempre.</p>
@@ -122,6 +135,18 @@ function App() {
             <p> 08 - Resposta Pessoal.</p>
           </div>
         }/>
+
+      { <MultiplaEscolha
+        titulo={"Ainda sobre o filme, indique a alternativa falsa: "}
+        q1={"Os recursos sonoros são um dos elementos que mais se destacam no filme."}
+        q2={"Através do trecho que assistimos podemos presumir que se trata do gênero drama."}
+        q3={"Esse é um filme ao qual os recursos técnicos não são importantes para impactar o telespectador."}
+        q4={"Os personagens fazem uso da vibração da batida para chamarem atenção uns dos outros."}
+        escolha1="escolhaErrada"
+        escolha2="escolhaErrada"
+        escolha3="escolhaCerta"
+        escolha4="escolhaErrada"
+      />}
 
 <Textos texto={
         <div>
@@ -178,12 +203,16 @@ function App() {
 }/>
 
     <MultiplaEscolha 
-      titulo={"Marque a alternativa que estiver incoerente com as imagens acima"}
-      q2={"A artista brinca com tons extremamente escuros no fundo para gerar contraste com as pesonagens"}
-      q1={"Podemos inferir que se trata de uma história cômica e voltada para o público infantil"}
+      titulo={"Marque a alternativa falsa: "}
+      q2={"A artista brinca com tons extremamente escuros no fundo para gerar contraste com as pesonagens."}
+      q1={"Podemos inferir que se trata de uma história cômica e voltada para o público infantil."}
       q3={"A história trata de temas mais densos e com uma certa dramatização nos eventos."}
       q4={"O trecho conta com diversos verbos no pretérito, indicando que os eventos se tratam de memórias."}
-      escolhaCerta={"escolhaCerta"}
+      escolha1="escolhaCerta"
+      escolha2="escolhaErrada"
+      escolha3="escolhaErrada"
+      escolha4="escolhaErrada"
+
     />
 
     <Textos texto={
